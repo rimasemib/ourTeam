@@ -1,0 +1,20 @@
+
+
+.text1 {
+  display: flex;
+  padding-right: 100px;
+
+}
+
+  
+.container-card-text h2:hover ~ p {
+  display: block;
+}
+.text1 h2:hover {
+  display: none;
+}
+span
+{
+    font-weight: bolder;
+
+}

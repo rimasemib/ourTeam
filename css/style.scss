@@ -1,0 +1,52 @@
+// img{
+//     width: 100%;
+// }
+// figure{
+//     margin: 0;
+//     padding: 0;
+// }
+.container{
+    display: flex;
+    height: 220px;
+    background-color: aquamarine;
+    // flex-wrap: wrap;
+
+    .container-card{
+        display: flex;
+        // flex: 1;
+        background-color: tomato;
+        border: 2px solid black;
+        column-gap: 1em;
+        .container-card-image{
+            flex: 1;
+            overflow:hidden;
+            figure{
+                margin: 0;
+                padding: 0;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .container-card-text{
+            flex: 2;
+            padding-right: 3px;
+            padding-left: 3px;
+            
+            p{
+                display: none;
+            }
+        }
+        .container-card-text h2:hover ~ p {
+            display: block;
+          }
+    }
+    .even-card{
+        flex-direction: row-reverse;
+        column-gap: 1em;
+    }
+    
+   
+
+}
+
